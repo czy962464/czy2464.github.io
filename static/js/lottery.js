@@ -4,14 +4,14 @@ new Vue({
 	  isStart:1,	
 	  score:10, //消耗积分
       list:[
-        {img:'./static/img/j1.png',title:'100万'},
-        {img:'./static/img/j2.png',title:'100万'},
-        {img:'./static/img/j1.png',title:'100万'},
-        {img:'./static/img/j2.png',title:'100万'},
-        {img:'./static/img/j1.png',title:'100万'},
-        {img:'./static/img/j2.png',title:'100万'},
-        {img:'./static/img/j1.png',title:'100万'},
-        {img:'./static/img/j2.png',title:'100万'}
+        {img:'/static/img/j1.png',title:'100万'},
+        {img:'/static/img/j2.png',title:'100万'},
+        {img:'/static/img/j1.png',title:'100万'},
+        {img:'/static/img/j2.png',title:'100万'},
+        {img:'/static/img/j1.png',title:'100万'},
+        {img:'/static/img/j2.png',title:'100万'},
+        {img:'/static/img/j1.png',title:'100万'},
+        {img:'/static/img/j2.png',title:'100万'}
       ],   //奖品1-9     
       index: -1,  // 当前转动到哪个位置，起点位置
       count: 8,  // 总共有多少个位置

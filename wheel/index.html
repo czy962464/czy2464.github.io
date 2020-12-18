@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+
+<title>幸运抽奖</title>
+<!-- <link href=css/app.b079e442.css rel=preload as=style>
+<link href=js/app.108f207a.js rel=preload as=script>
+<link href=js/chunk-vendors.fd14f91c.js rel=preload as=script>
+<link href=css/app.b079e442.css rel=stylesheet> -->
+</head>
+<body>
+<noscript>
+<strong>We're sorry but vue2.6 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+
+<!-- <script src="./js/vue-luck-draw.umd.js"></script> -->
+<div id="app">
+  <div id="my-lucky" style="width: 200px; height: 200px"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="./js/lucky-canvas.umd.min.js"></script>
+<script>
+  new Vue({
+    el: '#app'
+  })
+</script>
+<script>
+  let luckyWheel = new LuckyCanvas.LuckyWheel('#my-lucky', {
+    blocks: [{ padding: '10px', background: '#d64737' }],
+    prizes: [
+      { fonts: [{ text: '0' }], background: '#f8d384' },
+      { fonts: [{ text: '1', top: '20px' }], background: '#f9e3bb' },
+      { fonts: [{ text: '2', top: '100%' }], background: '#fff' }
+    ],
+  })
+</script>
+<!-- <script src=js/chunk-vendors.fd14f91c.js></script><script src=js/app.108f207a.js></script> -->
+</body>
+</html>
